@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios'
+import Posts from './Posts';
+import Post from './Post';
+import { Route } from 'react-router-dom';
+
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      posts: []
-    };
-  }
-
-  componentDidMount () {
-    axios.get(https://jsonplaceholder.typicode.com/posts)
-  }
-
   render() {
     return (
       <div className="App">
-
+        <Route exact path='/' component={Posts} />
+        <Route path='/posts/:id' component={Post} />
       </div>
     );
   }
