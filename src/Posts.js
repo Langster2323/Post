@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
+//Host the number of Posts...
 class Posts extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +19,9 @@ class Posts extends Component {
       }).then(data => {
         this.setState({data});
       })
+      .catch(error => {
+          console.log('Error fetching and parsing data', error)
+      });
   }
 
   render () {

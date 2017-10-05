@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
+//Displays the template of each post...
 class Post extends Component {
   constructor(props){
     super(props);
