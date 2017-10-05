@@ -21,6 +21,7 @@ class Posts extends Component {
   }
 
   render () {
+    console.log(this.state.data);
     return (
       <div>
         <h1>Presents</h1>
